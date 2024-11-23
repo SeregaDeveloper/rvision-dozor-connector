@@ -18,7 +18,7 @@ DOZOR_USERNAME = config['dozor']['username']
 DOZOR_PASS = config['dozor']['password']
 EVENTS_DIR = config['path']['events_dir']
 LOG_DIR = config['path']['log_dir']
-LAST_ID_DIR = = config['path']['last_id_dir']
+LAST_ID_DIR = config['path']['last_id_dir']
 incident = {}
 
 headers = {
