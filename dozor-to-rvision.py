@@ -153,6 +153,9 @@ def events_processing(events):
         }
         if check_inc_id(event['eventId']):
             incident['DETECTION_DATE'] = event['regDate']
+
+            """ Разместите здесь другие необходимые действия по предварительной обработке инцидента """
+            
             incident_id = send_to_rvision(incident)
             write_last_inc_id(event['eventId'])
             time.sleep(5)
